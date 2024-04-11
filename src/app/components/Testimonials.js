@@ -64,7 +64,7 @@ export function Testimonials() {
     <section className='mt-[104.45px] bg-[#669688]'>
       <div className=''>
         <div className='flex flex-col md:flex-row items-center justify-between overflow-hidden'>
-          <div className='md:w-[30%] py-[148.5px] space-y-8 px-[44px]'>
+          <div className='md:w-[30%] py-[60px]  md:py-[148.5px] space-y-8 px-[44px]'>
             <h2 className='font-sans font-bold text-[44px] leading-[96.2%] tracking-[-1px] text-[#fff]'>
               What Our Customers are Saying
             </h2>
@@ -85,12 +85,26 @@ export function Testimonials() {
             </div>
           </div>
 
-          <div className=' md:w-[70%] mt-8 md:mt-0'>
+          <div className='w-[90%] md:w-[60%] lg:w-[70%] pb-8 md:pb-0 mt-8 md:mt-0'>
             <Swiper
               onSwiper={setSwiper}
-              spaceBetween={150}
-              slidesPerView={3}
+              spaceBetween={50}
+              slidesPerView={1}
               navigation
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 300,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 300,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
             >
               {testimonials.map((testimonial, index) => (
                 <SwiperSlide

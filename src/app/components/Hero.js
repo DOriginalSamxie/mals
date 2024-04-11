@@ -6,7 +6,7 @@ import BackgroundImage from '../../../public/assets/background-image.png'
 export function Hero() {
   return (
     <section className='bg-[#EFE9DF] mx-[44px] rounded-[16px]'>
-      <div className=' pt-[82px] px-[79px] flex'>
+      <div className=' pt-[82px] md:px-[79px] flex'>
         <div className=''>
           <h3 className='font-sans text-[12px] pb-2'>
             Ends on Monday 29th of May 2024, 12:00 PM BST

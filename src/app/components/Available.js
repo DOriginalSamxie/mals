@@ -29,10 +29,10 @@ export function Available() {
   }
 
   return (
-    <section className='pt-[80px] px-[64px]'>
+    <section className='pt-[80px] px-4 lg:px-[64px] lg:pb-[112px] '>
       <div>
         <div className='flex items-center justify-between pb-[48px]'>
-          <h1 className='font-sans text-[#4B5563] font-bold text-[44px] leading-[96.2%] tracking-[-1px]'>
+          <h1 className='font-sans text-[#4B5563] font-bold text-[30px] md:text-[44px] leading-[96.2%] tracking-[-1px]'>
             Available in your location
           </h1>
           <div className='flex gap-3'>
@@ -48,8 +48,19 @@ export function Available() {
           <Swiper
             onSwiper={setSwiper}
             spaceBetween={20}
-            slidesPerView={4}
+            slidesPerView={1}
             navigation
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
           >
             <SwiperSlide>
               <Card

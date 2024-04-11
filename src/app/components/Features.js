@@ -6,7 +6,7 @@ import Image from 'next/image'
 export function Features() {
   return (
     <section className='flex px-[72px] pt-[33px] '>
-      <div className='flex flex-col md:flex-row gap-[115px]'>
+      <div className='flex flex-col md:flex-row gap-[30px] md:gap-[115px]'>
         <div className='flex items-center gap-5'>
           <Image src={Badge} alt='badge' />
           <span>Quality Perfect Guarantee</span>

@@ -7,6 +7,7 @@ import { RecentlyViewed } from './components/RecentlyViewed'
 import { Order } from './components/Orders'
 import FAQ from './components/Faq'
 import { Footer } from './components/Footer'
+import { Testimonials } from './components/Testimonials'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Available />
+      <Testimonials />
       <Deals />
       <RecentlyViewed />
       <Order />

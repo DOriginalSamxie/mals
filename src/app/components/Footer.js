@@ -15,7 +15,7 @@ export function Footer() {
     <footer className='bg-[#FBF7F0] '>
       <div className='px-[20px]'>
         <div className='bg-white px-[40px] pt-[40px] pb-[60px] rounded-[12px]'>
-          <div className='flex justify-between '>
+          <div className='flex flex-col md:flex-row justify-between '>
             <div className='flex flex-col justify-between gap-[97px]'>
               <Image src={Logo} alt='logo' />
               <p className='text-[12px] font-sans font-normal leading-[160%] text-[#403E5A]'>
@@ -23,7 +23,7 @@ export function Footer() {
               </p>
             </div>
 
-            <div className='flex gap-[143px]'>
+            <div className='flex flex-col md:flex-row md:gap-[143px]'>
               <div>
                 <h3 className='font-sans font-semibold text-[12px] text-[#403E5A] pb-[20px]'>
                   INFO

@@ -13,7 +13,7 @@ export function FAQ() {
         </h1>
       </div>
 
-      <div className='pt-[65px] pb-[120px] px-[325px]  mx-auto'>
+      <div className='pt-[65px] pb-[120px] lg:px-[325px]  mx-auto'>
         <Accordion
           title='How do i install AC?'
           content='Lorem ipsum dolor sit amet consectetur. Ultricies at eu tristique in quam vel ultricies. Volutpat vel odio iaculis viverra auctor semper. Velit tortor nisi porttitor at fermentum congue sapien augue id. A at at felis lacinia ac. Amet sed nunc sit volutpat cras felis. Dolor feugiat at.'
